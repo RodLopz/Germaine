@@ -1,0 +1,34 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Microsoft cloud GdcSandbox ForceSync",
+            "request": "launch",
+            "type": "al",
+            "environmentType": "Sandbox",
+            "environmentName": "GdcSandbox",
+            "tenant": "36cc335c-acc0-4410-b7b4-288e885a9d1b",
+            "startupObjectId": 9022,
+            "startupObjectType": "Page",
+            "breakOnError": "All",
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            "schemaUpdateMode": "ForceSync"
+        },
+        {
+            "name": "Microsoft cloud GdcSandbox",
+            "request": "launch",
+            "type": "al",
+            "environmentType": "Sandbox",
+            "environmentName": "GdcSandbox",
+            "tenant": "36cc335c-acc0-4410-b7b4-288e885a9d1b",
+            "startupObjectId": 9022,
+            "startupObjectType": "Page",
+            "breakOnError": "All",
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true
+        }
+    ]
+}

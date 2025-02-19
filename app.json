@@ -1,0 +1,34 @@
+{
+  "id": "8ef618cf-1359-46df-805f-5d94fca7baf8",
+  "name": "GdC",
+  "publisher": "GdC",
+  "version": "1.20250219.0.0",
+  "brief": "https://www.germainedecapuccini.es/",
+  "description": "https://www.germainedecapuccini.es/",
+  "privacyStatement": "https://www.germainedecapuccini.es/",
+  "EULA": "https://www.germainedecapuccini.es/",
+  "help": "https://www.germainedecapuccini.es/",
+  "url": "https://www.germainedecapuccini.es/",
+  "logo": "",
+  "contextSensitiveHelpUrl": "https://www.germainedecapuccini.es/",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "24.0.0.0",
+  "application": "24.0.0.0",
+  "idRanges": [
+    {
+      "from": 75900,
+      "to": 75999
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "13.0",
+  "features": [
+    "TranslationFile",
+    "NoImplicitWith"
+  ]
+}
