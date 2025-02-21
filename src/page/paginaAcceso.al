@@ -1,9 +1,10 @@
 /// <summary>
-/// Unknown germaine.
+/// Gestión de accesos a páginas.
 /// </summary>
 namespace germaine.Pruebas2025;
+
 /// <summary>
-/// Page cabAccesoList (ID 75900).
+/// Página de Lista para gestionar accesos a páginas (ID 75900).
 /// </summary>
 page 75900 "cabAccesoList"
 {
@@ -11,8 +12,8 @@ page 75900 "cabAccesoList"
     PageType = List;
     Caption = 'Accesos';
     SourceTable = cabAcceso;
-    UsageCategory = Administration;
-    AdditionalSearchTerms = 'AccesoPrueba';
+    UsageCategory = Lists;
+    AdditionalSearchTerms = 'AccesoPrueba, Permisos, Usuarios';
 
     layout
     {
@@ -22,15 +23,15 @@ page 75900 "cabAccesoList"
             {
                 field("Page ID"; Rec.IDPagina)
                 {
-
+                    Caption = 'ID de Página';
                 }
                 field("User ID"; Rec."User ID")
                 {
-
+                    Caption = 'ID de Usuario';
                 }
                 field("Page Name"; Rec.Nombre)
                 {
-
+                    Caption = 'Nombre de Página';
                 }
             }
         }
@@ -42,11 +43,18 @@ page 75900 "cabAccesoList"
         {
             action(GrantAccess)
             {
-                Caption = 'Grant Access';
+                Caption = 'Conceder Acceso';
                 ApplicationArea = All;
                 trigger OnAction()
                 begin
-                    Message('Acceso autorizado al usuario');
+                    if Rec.FindSet() then begin
+                        if Rec.Get(Rec.IDPagina, Rec."User ID") then begin
+                            Message('El usuario ya tiene acceso a esta página.');
+                        end else begin
+                            Rec.Insert();
+                            Message('Acceso concedido al usuario.');
+                        end;
+                    end;
                 end;
             }
         }
