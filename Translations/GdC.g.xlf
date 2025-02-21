@@ -2,7 +2,58 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" source-language="en-US" target-language="en-US" original="GdC">
     <body>
-      <group id="body" />
+      <group id="body">
+        <trans-unit id="Table 3984551652 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Accesos</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table cabAcceso - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3984551652 - Field 787087295 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table cabAcceso - Field IDPagina - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 3984551652 - Field 787087295 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ID de Pagina</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table cabAcceso - Field IDPagina - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3984551652 - Field 814966011 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table cabAcceso - Field Nombre - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 3984551652 - Field 814966011 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Nombre</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table cabAcceso - Field Nombre - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3984551652 - Field 2708250016 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table cabAcceso - Field User ID - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 3984551652 - Field 2708250016 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ID Usuario</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table cabAcceso - Field User ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2892652750 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Accesos</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page cabAccesoList - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2892652750 - Property 3863440606" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AccesoPrueba</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page cabAccesoList - Property AdditionalSearchTerms</note>
+        </trans-unit>
+        <trans-unit id="Page 2892652750 - Action 923043230 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Grant Access</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page cabAccesoList - Action GrantAccess - Property Caption</note>
+        </trans-unit>
+      </group>
     </body>
   </file>
 </xliff>

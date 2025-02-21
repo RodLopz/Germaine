@@ -2,6 +2,9 @@
 // Remember that object names and IDs should be unique across all extensions.
 // AL snippets start with t*, like tpageext - give them a try and happy coding!
 
+/// <summary>
+/// Unknown DefaultPublisher.
+/// </summary>
 namespace DefaultPublisher.Germaine;
 
 using Microsoft.Sales.Customer;
