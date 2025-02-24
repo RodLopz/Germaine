@@ -46,14 +46,21 @@ page 75900 "cabAccesoList"
                 Caption = 'Conceder Acceso';
                 ApplicationArea = All;
                 trigger OnAction()
+                var
+                    Acceso: Record cabAcceso;
                 begin
-                    if Rec.FindSet() then begin
-                        if Rec.Get(Rec.IDPagina, Rec."User ID") then begin
-                            Message('El usuario ya tiene acceso a esta página.');
-                        end else begin
-                            Rec.Insert();
-                            Message('Acceso concedido al usuario.');
-                        end;
+                    // Verificamos si el acceso ya existe antes de insertarlo
+                    Acceso.SetRange(IDPagina, Rec.IDPagina);
+                    Acceso.SetRange("User ID", Rec."User ID");
+
+                    if not Acceso.IsEmpty() then begin
+                        Message('El usuario ya tiene acceso a esta página.');
+                    end else begin
+                        Acceso.Init();
+                        Acceso.IDPagina := Rec.IDPagina;
+                        Acceso."User ID" := Rec."User ID";
+                        Acceso.Insert();
+                        Message('Acceso concedido al usuario.');
                     end;
                 end;
             }
