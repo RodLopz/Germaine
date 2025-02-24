@@ -44,12 +44,27 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page cabAccesoList - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 2892652750 - Property 3863440606" size-unit="char" translate="yes" xml:space="preserve">
-          <source>AccesoPrueba</source>
+          <source>AccesoPrueba, Permisos, Usuarios</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page cabAccesoList - Property AdditionalSearchTerms</note>
         </trans-unit>
+        <trans-unit id="Page 2892652750 - Control 894914730 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ID de Página</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page cabAccesoList - Control Page ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2892652750 - Control 3274402224 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Nombre de Página</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page cabAccesoList - Control Page Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2892652750 - Control 2708250016 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ID de Usuario</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page cabAccesoList - Control User ID - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 2892652750 - Action 923043230 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Grant Access</source>
+          <source>Conceder Acceso</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page cabAccesoList - Action GrantAccess - Property Caption</note>
         </trans-unit>
