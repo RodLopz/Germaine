@@ -12,8 +12,8 @@ report 75903 IVAReport
     UsageCategory = ReportsAndAnalysis;
     ApplicationArea = All;
     Caption = 'Lista entrada IVA';
-    DefaultLayout = RDLC;
-    RDLCLayout = 'listaIVA.rdlc';
+    DefaultLayout = Excel;
+    ExcelLayout = 'listaIVA.xlsx';
 
     dataset
     {
