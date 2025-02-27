@@ -68,21 +68,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page cabAccesoList - Action GrantAccess - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Report 1347770807 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Lista Canarias</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report Export IGIC Sumatorio - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Report 1347770807 - RequestPage 2516438534 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Parámetros del Reporte</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report Export IGIC Sumatorio - RequestPage RequestOptionsPage - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Report 1347770807 - Control 539546824 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Filtrar por Fecha</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report Export IGIC Sumatorio - Control DateFilter - Property Caption</note>
-        </trans-unit>
         <trans-unit id="Report 3538427980 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Lista entrada IVA</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -97,6 +82,26 @@
           <source>Filtrar por Fecha</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report IVAReport - Control DateFilter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3388930732 - Field 1210088440 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CIF</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TempVATReporta - Field CIF - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3388930732 - Field 814966011 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Nombre</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TempVATReporta - Field Nombre - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3388930732 - Field 3360667779 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TotalFacturaAbono</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TempVATReporta - Field TotalFacturaAbono - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3388930732 - Field 3361573537 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Trimestre</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TempVATReporta - Field Trimestre - Property Caption</note>
         </trans-unit>
       </group>
     </body>

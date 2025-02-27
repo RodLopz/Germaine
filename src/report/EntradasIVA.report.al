@@ -1,6 +1,13 @@
+/// <summary>
+/// Unknown germaine.
+/// </summary>
 namespace germaine.Pruebas2025;
 
 report 75903 IVAReport
+///
+/// <summary>
+/// Gestión de accesos a páginas.
+/// </summary>
 {
     UsageCategory = ReportsAndAnalysis;
     ApplicationArea = All;
@@ -19,14 +26,7 @@ report 75903 IVAReport
             column(Nombre; Nombre) { }
             column(Trimestre; Trimestre) { }
             column(TotalFacturaAbono; TotalFacturaAbono) { }
-            // column(EntryNo_VATEntry; "Entry No.") { }
             column(VATProdPostingGroup_VATEntry; "VAT Prod. Posting Group") { }
-            // column(PostingDate_VATEntry; "Posting Date") { }
-            // column(DocumentNo_VATEntry; "Document No.") { }
-            // column(ExternalDocumentNo_VATEntry; "External Document No.") { }
-            // column(Type_VATEntry; "Type") { }
-            // column(BilltoPaytoNo_VATEntry; "Bill-to/Pay-to No.") { }
-            // column(CountryRegionCode_VATEntry; "Country/Region Code") { }
 
             trigger OnPreDataItem()
             begin
@@ -37,6 +37,8 @@ report 75903 IVAReport
             var
                 CustomerRec: Record Microsoft.Sales.Customer.Customer;
                 VendorRec: Record Microsoft.Purchases.Vendor.Vendor;
+                VATEntryAux: Record Microsoft.Finance.VAT.Ledger."VAT Entry";
+                TotalAmountAux: Decimal;
             begin
                 if CustomerRec.Get("Bill-to/Pay-to No.") then begin
                     CIF := CustomerRec."VAT Registration No.";
@@ -46,7 +48,6 @@ report 75903 IVAReport
                     CIF := VendorRec."VAT Registration No.";
                     Nombre := VendorRec.Name;
                 end;
-
 
                 case Date2DMY("Posting Date", 2) of
                     1 .. 3:
@@ -59,8 +60,16 @@ report 75903 IVAReport
                         Trimestre := 'Q4';
                 end;
 
-
-                TotalFacturaAbono += Amount;
+                if lastCIF = CIF then
+                    CurrReport.SKIP()
+                else begin
+                    lastCIF := CIF;
+                    VATEntryAux.RESET();
+                    VATEntryAux.SETRANGE("Bill-to/Pay-to No.", "Bill-to/Pay-to No.");
+                    VATEntryAux.SETFILTER("VAT Prod. Posting Group", 'IGIC*');
+                    VATEntryAux.CALCSUMS(Amount);
+                    TotalFacturaAbono := VATEntryAux.Amount;
+                end;
             end;
         }
     }
@@ -91,4 +100,5 @@ report 75903 IVAReport
         Nombre: Text[100];
         Trimestre: Text[2];
         TotalFacturaAbono: Decimal;
+        lastCIF: Code[20];
 }
