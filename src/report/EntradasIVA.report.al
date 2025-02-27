@@ -67,7 +67,7 @@ report 75903 IVAReport
                     VATEntryAux.RESET();
                     VATEntryAux.SETRANGE("Bill-to/Pay-to No.", "Bill-to/Pay-to No.");
                     VATEntryAux.SETFILTER("VAT Prod. Posting Group", 'IGIC*');
-                    VATEntryAux.CALCSUMS(Amount);
+                    VATEntryAux.CalcSums(Amount);
                     TotalFacturaAbono := VATEntryAux.Amount;
                 end;
             end;
